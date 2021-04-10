@@ -17,8 +17,8 @@
     <div class="flex-container row wrap sticky">
         <a href="#Important" class="Button">Quick</a>
         <a href="#Util" class="Button">Util</a>
-        <a href="#GameCreation" class="Button">Game Creation</a>
-        <a href="#DailyBelohnung" class="Button">Daily</a>
+        <a href="#GameCommands" class="Button">Minigame</a>
+        <a href="#MoneyCommands" class="Button">Money</a>
     </div>
 
 
@@ -89,8 +89,8 @@
         </div>
     </div>
 
-    <div class="flex-container column title" id="GameCreation">
-        <h2>Game Creation</h2>
+    <div class="flex-container column title" id="GameCommands">
+        <h2>Game Commands</h2>
         <div class="flex-container column element">
             <h3>>creategame</h3>
             <p>This command returns an overview over all available minigames with it's specific index.</p>
@@ -102,8 +102,11 @@
              are displayed in the channel.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>inv @[user] && >inv everyone</h3>
+            <p>By default only the game-creator (and the admin) can write in the created game-
+            textchannel. The game-creator has to invite other users so that they can write.
+            He can do this with the >inv-command. >inv @[user] invites one specific user while
+            >inv everyone invites every user on the server.</p>
         </div>
         <div class="flex-container column element">
             <h3>Command 1</h3>
@@ -115,7 +118,7 @@
         </div>
     </div>
 
-    <div class="flex-container column title" id="DailyBelohnung">
+    <div class="flex-container column title" id="MoneyCommands">
         <h2>Money Commands </h2>
         <div class="flex-container column element">
             <h3>The money does not have a use yet!</h3>
