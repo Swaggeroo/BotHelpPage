@@ -106,7 +106,7 @@
             whole word with the >word-command. <br>
             To start a new game, you have to delete the old textchannel and then create a new
             one with the >creategame 1-command.<br>
-           <b>Don't forget to clean up after yourself with the >deletegame-command after you finish. In this minigame it
+           <b>Don't forget to clean up after yourself with the >deletegame-command. In this minigame it
               ,it is more important than in the other minigames, because you can only be the game-creator for one game at a time!</b>
            </p>
         </div>
@@ -121,19 +121,19 @@
                 The first one to complete the message wins. After that you can always start a
                 new game with the >start-command or rearrange the length with the >set [amount]-command.<br>
                 Hint: Copying the message doesn't work ;) ;P<br>
-                <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+                <b>Don't forget to clean up after yourself with the >deletegame-command</b>
             </p>
         </div>
         <div class="flex-container column element">
             <h3>>Tic-Tac-Toe (>creategame 3)</h3>
             <p>Under >creategame 3 you can find our third minigame "Tic-Tac-Toe".
                 I think everybody knows the game, so I will only cover the commands. <br>
-                Before the game can start, the game-creator has to admister a second player (his opponent)
+                Before the game can start, the game-creator has to assign a second player (his opponent)
                 with the >spieler2 [@user]-command. After that he has to use the >start-command to start the game.
                 (Don't forget to >inv [@user] the second player, so he is able to write)<br>
                 After the game, you can start a new one by using the >start-command again. You can also always change
                 the second player with the >spieler2 [@user]-command, after a game has ended.<br>
-                <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+                <b>Don't forget to clean up after yourself with the >deletegame-command</b>
             </p>
         </div>
         <div class="flex-container column element">
@@ -145,14 +145,20 @@
                After that you are ready to play. Just type >next and the next question will appear. (Sorry if they repeat fast, at thsi moment (04:53 10.04.2021),
                there are only about 100 Questions in total). This command can be used infinitely. If two or more user have the same answer, all of them get a point.
                With the >points you can see how many rounds each player has won. <br>
-               <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+               <b>Don't forget to clean up after yourself with the >deletegame-command</b>
             </p>
         </div>
         <div class="flex-container column element">
             <h3>>Schiffe versenken (>creategame 5)</h3>
             <p>Under >creategame 5 you can find our fifth minigame "Schiffe versenken".
-               PLATZHALTER------------<br><br><br><br>-------------------
-               <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+               I think everybody knows how to play this game, so I will only cover the commands.<br>
+               At the beginning the game-creator first has to assign his opponent with the >add [@user]-command. Then both player have to
+               place their ships. Both of you have 1 5-piece ship, 2 4-piece ships, 3 3-piece ships and 4 2-piece ships. How to place them is
+               explained in the initial message which is also asking you to place them.<br>
+               After both players have finished placing their ships, a message is send to their game-textchannel telling you that you are ready to start.
+               You guess by using the >[position]-command (AS EXAMPLE: >B5 for "shooting" the position B5). <br>
+               To play another round, after the first one, you have to create a new game.
+               <b>Don't forget to clean up after yourself with the >deletegame-command</b>
             </p>
         </div>
     </div>
