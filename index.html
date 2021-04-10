@@ -16,6 +16,7 @@
 
     <div class="flex-container row wrap sticky">
         <a href="#Important" class="Button">Quick</a>
+        <a href="#Util" class="Button">Util</a>
         <a href="#GameCreation" class="Button">Game Creation</a>
         <a href="#DailyBelohnung" class="Button">Daily</a>
     </div>
@@ -24,10 +25,6 @@
 
     <div class="flex-container column title" id="Important">
         <h2>Important Commands</h2>
-        <div class="flex-container column element">
-            <h3>>daily</h3>
-            <p>Use this command to claim your daily bonus of 100 money</p>
-        </div>
         <div class="flex-container column element">
             <h3>Command 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -77,7 +74,7 @@
                 it won't work (Use the >rand-command instead)</p>
         </div>
         <div class="flex-container column element">
-            <h3>>rand</h3>
+            <h3>>rand [question]</h3>
             <p>This command gives also gives a random answer, but you are required to write the Question behind the command</p>
         </div>
         <div class="flex-container column element">
@@ -85,20 +82,24 @@
             <p>This command leads you to this fabulous website of bot-commands.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>jetztredeich</h3>
+            <p>This awesome command can only be used by moderators and admins. It mutes
+             everyone who is in the same voice-channel as the command writer for 10 seconds
+            (the command writer does not get muted, so for 10 seconds you can talk without getting interrupted)</p>
         </div>
     </div>
 
     <div class="flex-container column title" id="GameCreation">
         <h2>Game Creation</h2>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>creategame</h3>
+            <p>This command returns an overview over all available minigames with it's specific index.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>creategame [index]</h3>
+            <p>This command creates a new textchannel in which the minigame will take place.
+            The minigame is decided by the provided index. Further instructions on how to play
+             are displayed in the channel.</p>
         </div>
         <div class="flex-container column element">
             <h3>Command 1</h3>
@@ -115,22 +116,25 @@
     </div>
 
     <div class="flex-container column title" id="DailyBelohnung">
-        <h2>Daily Belohnung</h2>
+        <h2>Money Commands </h2>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>The money does not have a use yet!</h3>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>getMoney</h3>
+            <p>This command returns the amount of money you have at the moment.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>addMoney [amount]</h3>
+            <p>With this command you can add a specific amount of money to your account.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>removeMoney [amount]</h3>
+            <p>With this command you can reduce your money by a specific amount</p>
+        </div>
+        <div class="flex-container column element">
+            <h3>>daily</h3>
+            <p>Once a day, you can collect 100 money through this command. It is reset at 0:00 PM UTC (1:00 AM UTC+1)</p>
         </div>
         <div class="flex-container column element">
             <h3>Command 1</h3>
