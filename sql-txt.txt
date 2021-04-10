@@ -1,0 +1,76 @@
+create table users
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	dcid long not null,
+	money double,
+	daily bool,
+	dailyben bool
+);
+
+create table galgenmaennchen
+(
+	galgenmaennchen_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	secret varchar(255),
+	letters varchar(255),
+	usedletters varchar(255),
+	creator double,
+	mistakes int default 0
+);
+
+create table speedtyping
+(
+	speedtyping_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	sentence varchar(2550),
+	words int,
+    start_time double
+);
+
+
+create table gamemap
+(
+	gamemap_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	user_id long,
+	game_type varchar(255)
+);
+
+create table tiktaktoe
+(
+	tiktaktoe_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	spieler1 long,
+	spieler2 long,
+	spieler1pos varchar(20),
+    spieler2pos varchar(20),
+    spielernummer int,
+    gewonnen boolean,
+    started boolean default false
+);
+
+create table schiffeversenken
+(
+	schiffeversenken_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	spieler1 long,
+	spieler2 long,
+	spieler1ships varchar(255),
+    spieler2ships varchar(255),
+    spieler1hits varchar(500),
+    spieler2hits varchar(500),
+    spielernummer int default 0,
+    gewonnen int default 0,
+    started boolean default false
+);
+
+create table schaetzen
+(
+	schaetzen_id int auto_increment PRIMARY KEY,
+	channel_id long,
+	spieler varchar(2500),
+	spielerquessed varchar(2500),
+	spielerpunkte varchar(255),
+	playmessage long,
+    schaetzung varchar(255)
+);
