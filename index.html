@@ -18,6 +18,7 @@
         <a href="#Important" class="Button">Quick</a>
         <a href="#Util" class="Button">Util</a>
         <a href="#GameCommands" class="Button">Minigame</a>
+        <a href="#avaGames" class="Button">Available Games</a>
         <a href="#MoneyCommands" class="Button">Money</a>
     </div>
 
@@ -26,40 +27,9 @@
     <div class="flex-container column title" id="Important">
         <h2>Important Commands</h2>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-                quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-                sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-                recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-                minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
-                quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
-                fugiat, temporibus enim commodi iusto libero magni deleniti quod quam
-                consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-                doloremque. Quaerat provident commodi consectetur veniam similique ad
-                earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
-                fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
-                suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-                modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
-                totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
-                quasi aliquam eligendi, placeat qui corporis!</p>
-        </div>
-        <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
-        </div>
-        <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
-        </div>
-        <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>getStats</h3>
+            <p>This command returns the overall stats since our bot startes working.
+            It counts the sent messages, the sent bot-commands and the number of created games</p>
         </div>
     </div>
     <div class="flex-container column title" id="Util">
@@ -109,12 +79,33 @@
             >inv everyone invites every user on the server.</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>:mop:</h3>
+            <p>This command can only be used in a game-textchannel. It clears all previously
+            existing messages in the channel (GetMop(p)ed).</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>deletegame</h3>
+            <p>With this command the game-creator (or an moderator) can delete the game-
+            textchannel and delete the all data of the game from our DB. To keep a nice and clean DC-Server
+            and to sop our DB from breaking, we want everyone to use this command to clean up after yourself.</p>
+        </div>
+    </div>
+
+    <div class="flex-container column title" id="avaGames">
+        <h2>Available Games</h2>
+        <div class="flex-container column element">
+            <h3>>Galgenmännchen</h3>
+            <p>Under >creategame 1 you can find our first minigame "Galgenmännchen".
+            I think everybody knows the game, so I will only be covering the commands.
+            At the beginning the game-creator has to choose a word and send it to the
+            bot with the >ga-command. The game starts as soon as the word is chosen and was successfully
+            received by the bot. The word is compared to our blacklist of curse-words, so don't even try to use one.
+            </p>
+            <p>The players can guess simply by typing >[letter]. It always counts the first letter
+            that is typed after the prefix >, ignoring the rest of the message. You can guess the
+            whole word with the >word-command. <br>
+            To start a new game, you have to delete the old textchannel and then create a new
+            one with the >creategame 1-command</p>
         </div>
     </div>
 
@@ -140,8 +131,9 @@
             <p>Once a day, you can collect 100 money through this command. It is reset at 0:00 PM UTC (1:00 AM UTC+1)</p>
         </div>
         <div class="flex-container column element">
-            <h3>Command 1</h3>
-            <p>Bla Bla Bla</p>
+            <h3>>enablenotification</h3>
+            <p>With this command you can activate/deactivate the notification for an
+            unclaimed daily reward.</p>
         </div>
     </div>
 </body>
