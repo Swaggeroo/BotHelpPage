@@ -94,18 +94,46 @@
     <div class="flex-container column title" id="avaGames">
         <h2>Available Games</h2>
         <div class="flex-container column element">
-            <h3>>Galgenmännchen</h3>
+            <h3>>Galgenmännchen (>creategame 1)</h3>
             <p>Under >creategame 1 you can find our first minigame "Galgenmännchen".
             I think everybody knows the game, so I will only be covering the commands.
             At the beginning the game-creator has to choose a word and send it to the
             bot with the >ga-command. The game starts as soon as the word is chosen and was successfully
             received by the bot. The word is compared to our blacklist of curse-words, so don't even try to use one.
-            </p>
-            <p>The players can guess simply by typing >[letter]. It always counts the first letter
+            <br>
+            The players can guess simply by typing >[letter]. It always counts the first letter
             that is typed after the prefix >, ignoring the rest of the message. You can guess the
             whole word with the >word-command. <br>
             To start a new game, you have to delete the old textchannel and then create a new
-            one with the >creategame 1-command</p>
+            one with the >creategame 1-command.<br>
+           <b>Don't forget to clean up after yourself with the >deletegame-command after you finish. In this minigame it
+              it is more important than in the other minigames, because you can only be the game-creator for one game at a time!</b>
+           </p>
+        </div>
+        <div class="flex-container column element">
+            <h3>>Speedtyping (>creategame 2)</h3>
+            <p>Under >creategame 2 you can find our second minigame "Speedtyping".
+                In this game you can compare your typingspeed with your friends. The first one to
+                fully replicate the randomly-generated word-message of the bot wins.
+                At the beginning the game-creator has to set the amount of words you want to type.
+                The min is 20 words and the max is 200 words.<br>After that, the game-creator has to start
+                the game. That is the moment the timer to count your words per minute starts.
+                The first one to complete the message wins. After that you can always start a
+                new game with the >start-command or rearrange the length with the >set-command.<br>
+                Hint: Copying the message doesn't work ;) ;P<br>
+                <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+            </p>
+        </div>
+        <div class="flex-container column element">
+            <h3>>Tic-Tac-Toe (>creategame 3)</h3>
+            <p>Under >creategame 3 you can find our third minigame "Tic-Tac-Toe".
+                I think everybody knows the game, so I will only cover the commands. <br>
+                Before the game can start, the game-creator has to admister a second player (his opponent)
+                with the >spieler2-command. After that he has to use the >start-command to start the game.
+                (Don't forget to >inv the second player, so he is able to write)<br>
+                After the game, you can start a new one by using the >start-command again.
+                <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+            </p>
         </div>
     </div>
 
