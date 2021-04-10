@@ -107,7 +107,7 @@
             To start a new game, you have to delete the old textchannel and then create a new
             one with the >creategame 1-command.<br>
            <b>Don't forget to clean up after yourself with the >deletegame-command after you finish. In this minigame it
-              it is more important than in the other minigames, because you can only be the game-creator for one game at a time!</b>
+              ,it is more important than in the other minigames, because you can only be the game-creator for one game at a time!</b>
            </p>
         </div>
         <div class="flex-container column element">
@@ -115,11 +115,11 @@
             <p>Under >creategame 2 you can find our second minigame "Speedtyping".
                 In this game you can compare your typingspeed with your friends. The first one to
                 fully replicate the randomly-generated word-message of the bot wins.
-                At the beginning the game-creator has to set the amount of words you want to type.
+                At the beginning the game-creator has to set the amount of words you want to type with the >set [amount]-command.
                 The min is 20 words and the max is 200 words.<br>After that, the game-creator has to start
                 the game. That is the moment the timer to count your words per minute starts.
                 The first one to complete the message wins. After that you can always start a
-                new game with the >start-command or rearrange the length with the >set-command.<br>
+                new game with the >start-command or rearrange the length with the >set [amount]-command.<br>
                 Hint: Copying the message doesn't work ;) ;P<br>
                 <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
             </p>
@@ -129,10 +129,30 @@
             <p>Under >creategame 3 you can find our third minigame "Tic-Tac-Toe".
                 I think everybody knows the game, so I will only cover the commands. <br>
                 Before the game can start, the game-creator has to admister a second player (his opponent)
-                with the >spieler2-command. After that he has to use the >start-command to start the game.
-                (Don't forget to >inv the second player, so he is able to write)<br>
-                After the game, you can start a new one by using the >start-command again.
+                with the >spieler2 [@user]-command. After that he has to use the >start-command to start the game.
+                (Don't forget to >inv [@user] the second player, so he is able to write)<br>
+                After the game, you can start a new one by using the >start-command again. You can also always change
+                the second player with the >spieler2 [@user]-command, after a game has ended.<br>
                 <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+            </p>
+        </div>
+        <div class="flex-container column element">
+            <h3>>Schätzen (>creategame 4)</h3>
+            <p>Under >creategame 4 you can find our fourth minigame "Schätzen".
+               In this game you will guess the answer to randomly-generated questions and the one who is the closest to the answer wins a point.<br>
+               At the beginning the game-creator has to add his opponents with the >add [@user]-command (Don't forget to also >inv [@user] them, so they
+               have the permission to write in the gamechannel). <br>
+               After that you are ready to play. Just type >next and the next question will appear. (Sorry if they repeat fast, at thsi moment (04:53 10.04.2021),
+               there are only about 100 Questions in total). This command can be used infinitely. If two or more user have the same answer, all of them get a point.
+               With the >points you can see how many rounds each player has won. <br>
+               <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
+            </p>
+        </div>
+        <div class="flex-container column element">
+            <h3>>Schiffe versenken (>creategame 5)</h3>
+            <p>Under >creategame 5 you can find our fifth minigame "Schiffe versenken".
+               PLATZHALTER------------<br><br><br><br>-------------------
+               <b>Don't forget to clean up after yourself with the >deletegame-command after you finish</b>
             </p>
         </div>
     </div>
